@@ -16,7 +16,7 @@ include("header.php");
         <th colspan="2" >Option</th></tr>
     <?php
 
-    $sql_select = "SELECT EmployeeID, FirstName, LastName, Title,TitleOfCourtesy,HomePhone,Address,City,Country FROM Employees ORDER BY EmployeeID ASC";
+    $sql_select = "SELECT * FROM employees ORDER BY EmployeeID ASC";
     $ret_select = $db->select($sql_select);
     $start_num = 0;
     foreach ($ret_select as $rw) {
@@ -36,7 +36,7 @@ include("header.php");
 
 
             <td> <a class='btn btn-info btn-sm' href="employee-edit.php?edit=<?php echo $rw['EmployeeID']; ?>" title="edit">Edit</a>
-                <a class='btn btn-danger btn-sm' href="delete.php?del=<?php echo $rw['EmployeeID']; ?>" title="delete">Delete</a>
+                <a class='btn btn-danger btn-sm' href="employee-delete.php?del=<?php echo $rw['EmployeeID']; ?>" title="delete">Delete</a>
             </td>
         </tr>
     <?php };  ?>

@@ -5,7 +5,7 @@ include("header.php");
 
 $employeeID = $_GET['edit'];
 
-$ret_select = $db->select("SELECT * FROM Employees WHERE EmployeeID=:employeeID",
+$ret_select = $db->select("SELECT * FROM employees WHERE EmployeeID=:employeeID",
 	[
 		"employeeID" => $employeeID
 	]
