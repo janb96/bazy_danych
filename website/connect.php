@@ -1,6 +1,6 @@
 <?php
 
-require_once('mysql-wrapper/mysql_wrapper.class.php');
+require_once('wrapper/mysql_wrapper.class.php');
 
 $db = new MYSQL_WRAPPER();
 
