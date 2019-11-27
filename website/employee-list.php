@@ -35,7 +35,7 @@ include("header.php");
             <td><?php echo $rw['Country']; ?></td>
 
 
-            <td> <a class='btn btn-info btn-sm' href="edit.php?edit=<?php echo $rw['EmployeeID']; ?>" title="edit">Edit</a>
+            <td> <a class='btn btn-info btn-sm' href="employee-edit.php?edit=<?php echo $rw['EmployeeID']; ?>" title="edit">Edit</a>
                 <a class='btn btn-danger btn-sm' href="delete.php?del=<?php echo $rw['EmployeeID']; ?>" title="delete">Delete</a>
             </td>
         </tr>

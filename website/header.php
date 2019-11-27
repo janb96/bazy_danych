@@ -1,3 +1,14 @@
+<?php
+  
+  session_start();
+
+  if(isset($_SESSION['redirect'])) {
+    $url = $_SESSION['redirect'];
+    unset($_SESSION['redirect']);
+    header("Location: ".$url);
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
