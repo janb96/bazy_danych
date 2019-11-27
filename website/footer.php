@@ -1,16 +1,5 @@
-<div class="row-fluid">
-			<div class="span12">
-			  <div class="row-fluid">
-				<div class="alert alert-info">
-					<a name="contact"></a>
-				  <h2>Rifqi Fauzi Rahmadzani</h2>
-				  <p class="text-info">L200130122</p>
-				  <p>&copy; <a href="#">Sistem Basis Data</a>&nbsp<?php echo date("Y");?></p>
-				</div><!--/span-->
-			  </div><!--/row-->
-			</div><!--/span-->
-	</div><!--/row-->
-
+    <div class="row-fluid">
+</div><!--/row-->
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
@@ -25,7 +14,6 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
-	
 	<script src="assets/js/bootstrap.min.js"></script>
 
   </body>
