@@ -6,4 +6,6 @@
 #### - Sebastian Dąbek
 
 ## Jak uruchomić?
-#### docker-compose up
+#### ./start.sh
+### lub jeśli chcemy odpalic bez przebudowania obrazów
+#### ./quick-start.sh
