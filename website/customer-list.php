@@ -1,7 +1,7 @@
 <?php include("connect.php") ?>
 <?php include("header.php"); ?>
 
-<table><a href='insert.php'><button type='submit' class='btn btn-primary'>INSERT DATA</button></a>
+<table><a href='customer-add.php'><button type='submit' class='btn btn-primary'>INSERT DATA</button></a>
     </div></table></br>
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
@@ -41,8 +41,8 @@
 
 
 
-            <td> <a class='btn btn-info btn-sm' href="edit.php?edit=<?php echo $rw['EmployeeID']; ?>" title="edit">Edit</a>
-                <a class='btn btn-danger btn-sm' href="delete.php?del=<?php echo $rw['EmployeeID']; ?>" title="delete">Delete</a>
+            <td> <a class='btn btn-info btn-sm' href="edit-customer.php?edit=<?php echo $rw['EmployeeID']; ?>" title="edit">Edit</a>
+                <a class='btn btn-danger btn-sm' href="delete-customer.php?del=<?php echo $rw['EmployeeID']; ?>" title="delete">Delete</a>
             </td>
         </tr>
     <?php };  ?>
