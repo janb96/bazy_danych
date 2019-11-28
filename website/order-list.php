@@ -2,7 +2,7 @@
 include("connect.php");
 include("header.php");
 ?>
-<table><a href='employee-add.php'><button type='submit' class='btn btn-primary'>New order</button></a>
+<table><a href='order-add.php'><button type='submit' class='btn btn-primary'>New order</button></a>
     </div></table></br>
 
 

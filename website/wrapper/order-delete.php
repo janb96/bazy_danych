@@ -2,7 +2,7 @@
 
 include("connect.php");
 
-$employeeID = $_GET['del'];
+$orderID = $_GET['del'];
 
 $delete = $db->delete("orders", "`OrderID`=:orderID",
 	[
