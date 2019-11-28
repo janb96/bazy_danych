@@ -17,7 +17,7 @@
         <th colspan="2" >Option</th></tr>
     <?php
 
-    $sql_select = "SELECT ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued FROM Products ORDER BY ProductID ASC";
+    $sql_select = "SELECT ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued FROM Products ORDER BY ProductName ASC";
     $ret_select = $db->select($sql_select);
     $start_num = 0;
 
@@ -39,8 +39,8 @@
 
 
 
-            <td> <a class='btn btn-info btn-sm' href="edit-product.php?edit=<?php echo $rw['EmployeeID']; ?>" title="edit">Edit</a>
-                <a class='btn btn-danger btn-sm' href="delete-product.php?del=<?php echo $rw['EmployeeID']; ?>" title="delete">Delete</a>
+            <td> <a class='btn btn-info btn-sm' href="product-edit.php?edit=<?php echo $rw['ProductName']; ?>" title="edit">Edit</a>
+                <a class='btn btn-danger btn-sm' href="product-delete.php?del=<?php echo $rw['ProductName']; ?>" title="delete">Delete</a>
             </td>
         </tr>
     <?php };  ?>

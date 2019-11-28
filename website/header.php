@@ -1,8 +1,19 @@
+<?php
+
+  session_start();
+
+  if(isset($_SESSION['redirect'])) {
+    $url = $_SESSION['redirect'];
+    unset($_SESSION['redirect']);
+    header("Location: ".$url);
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Database Project</title>
+    <title>BAZY DANYCH</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">

@@ -14,49 +14,49 @@ $customers = $db->select("SELECT * FROM customers");
         </tr>
         <tr>
             <td>Company Name</td>
-            <td><input type='text' name='CompanyName' maxlength='25'> </td>
+            <td><input type='text' name='CompanyName' maxlength='40'> </td>
         </tr>
         <tr>
             <td>Contact Name</td>
-            <td><input type='text' name='ContactName'> </td>
+            <td><input type='text' name='ContactName' maxlength='30'> </td>
         </tr>
         <tr>
             <td>Contact Title</td>
-            <td><input type='text' name='ContactTitle'>
+            <td><input type='text' name='ContactTitle' maxlength='30'>
             </td>
         </tr>
         <tr>
             <td>Address</td>
-            <td><input type='text' name='Address'>
+            <td><input type='text' name='Address' maxlength='60'>
             </td>
         </tr>
         <tr>
             <td>City</td>
-            <td><input type='text' name='City'>
+            <td><input type='text' name='City' maxlength='15'>
             </td>
         </tr>
         <tr>
             <td>Region</td>
-            <td><input type='text' name='Region'>
+            <td><input type='text' name='Region' maxlength='15'>
             </td>
         </tr>
         <td>Postal Code</td>
-        <td><input type='text' name='PostalCode'>
+        <td><input type='text' name='PostalCode' maxlength='10'>
         </td>
         </tr>
         <tr>
             <td>Country</td>
-            <td><input type='text' name='Country'>
+            <td><input type='text' name='Country' maxlength='15'>
             </td>
         </tr>
         <tr>
             <td>Phone</td>
-            <td><input type='text' name='Phone'>
+            <td><input type='text' name='Phone' maxlength='24'>
             </td>
         </tr>
         <tr>
             <td>Fax</td>
-            <td><input type='date' name='Fax'>
+            <td><input type='date' name='Fax' maxlength='24'>
             </td>
         </tr>
 
