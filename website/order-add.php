@@ -12,11 +12,11 @@ $orders = $db->select("SELECT * FROM orders");
 	<form method="post">
 		<table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
 		<tr>
-			<td>First Name</td>
+			<td>Customer Name</td>
 			<td><input type='text' name='FirstName' maxlength='25'> </td>
 		</tr>
 		<tr>
-			<td>Last Name</td>
+			<td>Customer Surname</td>
 			<td><input type='text' name='LastName'> </td>
 		</tr>
 		<tr>
