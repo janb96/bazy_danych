@@ -1,7 +1,7 @@
 <?php include("connect.php") ?>
 <?php include("header.php"); ?>
 
-<table><a href='customer-add.php'><button type='submit' class='btn btn-primary'>INSERT DATA</button></a>
+<table><a href='customer-add.php'><button type='submit' class='btn btn-primary'>Add new customer</button></a>
     </div></table></br>
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
