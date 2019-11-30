@@ -17,7 +17,7 @@
         <th colspan="2" >Option</th></tr>
     <?php
 
-    $sql_select = "SELECT ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued FROM Products ORDER BY ProductName ASC";
+    $sql_select = "SELECT ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued FROM products ORDER BY ProductName ASC";
     $ret_select = $db->select($sql_select);
     $start_num = 0;
 

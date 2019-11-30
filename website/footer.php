@@ -16,5 +16,7 @@
     <script src="assets/js/bootstrap-typeahead.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 
+	<p><center>Projekt na <b>Bazy Danych</b> by Jan Boduch, Sebastian Dąbek, Mariusz Rogucki. 2019.</center></p>
+
   </body>
 </html>

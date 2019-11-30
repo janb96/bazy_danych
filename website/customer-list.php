@@ -1,7 +1,7 @@
 <?php include("connect.php") ?>
 <?php include("header.php"); ?>
 
-<table><a href='customer-add.php'><button type='submit' class='btn btn-primary'>Add new customer</button></a>
+<table><a href='customer-add.php'><button type='submit' class='btn btn-primary'>New customer</button></a>
     </div></table></br>
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
@@ -18,7 +18,7 @@
         <th colspan="2" >Option</th></tr>
     <?php
 
-    $sql_select = "SELECT CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax FROM Customers ORDER BY CustomerID ASC";
+    $sql_select = "SELECT CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax FROM customers ORDER BY CustomerID ASC";
     $ret_select = $db->select($sql_select);
     $start_num = 0;
 
