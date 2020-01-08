@@ -8,7 +8,7 @@ $orders = $db->select("SELECT * FROM orders");
 
 <!-- Comment just to make commit pass throught -->
 
-	<h1>New Order</h1>
+	<h1>Add new order</h1>
 	<form method="post">
 		<table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
 		<tr>
