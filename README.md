@@ -29,6 +29,46 @@
 
 #### Docker Compose to narzędzie do uruchamiania wielokontenerowych aplikacji. Kontenery, które zostaną uruchomione są zdefiniowane w pliku docker-compose.yml
 
+##### Stworzony plik docker-compose.yml
+```
+version: '3'
+
+services:
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: 123
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - 5001:3306
+    restart: always
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '5002:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: 123 
+
+  website:
+    image: my_php
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - 5000:80
+    depends_on:
+      - db
+```
+
 #### orphans/mysql-wrapper: „A database wrapper class to help reduce code and support rapid development”
 
 ### Jak skonfigurować?
