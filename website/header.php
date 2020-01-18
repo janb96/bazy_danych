@@ -63,6 +63,7 @@
                     <li class="active"><a href="stats3.php">Stats3</a></li>
                     <li class="active"><a href="stats4.php">Stats4</a></li>
                     <li class="active"><a href="stats5.php">Stats5</a></li>
+                    <li class="active"><a href="stats6.php">Stats6</a></li>
                 </ul>
             </div>
         </div>
