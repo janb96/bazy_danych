@@ -53,6 +53,7 @@
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
+                    <li class="active"><a href="index.php">Main</a></li>
                     <li class="active"><a href="employee-list.php">Employees</a></li>
                     <li class="active"><a href="customer-list.php">Customers</a></li>
                     <li class="active"><a href="product-list.php">Products</a></li>

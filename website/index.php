@@ -53,10 +53,16 @@
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
+                    <li class="active"><a href="index.php">Main</a></li>
                     <li class="active"><a href="employee-list.php">Employees</a></li>
                     <li class="active"><a href="customer-list.php">Customers</a></li>
                     <li class="active"><a href="product-list.php">Products</a></li>
                     <li class="active"><a href="order-list.php">Orders</a></li>
+                    <li class="active"><a href="stats.php">Stats1</a></li>
+                    <li class="active"><a href="stats2.php">Stats2</a></li>
+                    <li class="active"><a href="stats3.php">Stats3</a></li>
+                    <li class="active"><a href="stats4.php">Stats4</a></li>
+                    <li class="active"><a href="stats5.php">Stats5</a></li>
                 </ul>
 
             </div>
@@ -67,5 +73,7 @@
 <h2><p style="text-align: center">Jan Boduch</p></h2></br>
 <h2><p style="text-align: center">Mariusz Rogucki</p></h2></br>
 <h2><p style="text-align: center">Sebastian Dąbek</p></h2></br>
-
+<center>
+<img src="agh.jpg"></img>
+</center>
 <div class="container">

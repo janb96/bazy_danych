@@ -4,7 +4,7 @@ include("connect.php");
 include("header.php");
 
 ?>
-
+<h1>Ilość produktów w konkretnym zamówieniu</h1>
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
         <th width="125">OrderID</th>
