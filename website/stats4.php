@@ -25,7 +25,7 @@ foreach ($ret_select as $rw) {
 <tr>
               <td><?php echo $start_num; ?></td>
              <td><?php echo $rw['ProductID']; ?></td>
-            <td><?php echo $rw['sum(Quantity)']; ?></td>
+            <td><?php echo $rw['howMuch']; ?></td>
 
         </tr>
 

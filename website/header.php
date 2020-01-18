@@ -58,6 +58,10 @@
                     <li class="active"><a href="product-list.php">Products</a></li>
                     <li class="active"><a href="order-list.php">Orders</a></li>
                     <li class="active"><a href="stats.php">Stats1</a></li>
+                    <li class="active"><a href="stats2.php">Stats2</a></li>
+                    <li class="active"><a href="stats3.php">Stats3</a></li>
+                    <li class="active"><a href="stats4.php">Stats4</a></li>
+                    <li class="active"><a href="stats5.php">Stats5</a></li>
                 </ul>
             </div>
         </div>
