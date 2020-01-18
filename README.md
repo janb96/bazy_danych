@@ -21,8 +21,8 @@
 
 #### Opcja nr 2:
 ##### Wykonanie poleceń:
-##### docker build -t my_php -f website/Dockerfile website
-##### docker-compose up
+###### `docker build -t my_php -f website/Dockerfile website`
+###### `docker-compose up`
 
 
 ### Opis wykorzystanych technologii:
@@ -48,12 +48,13 @@ $db->connect(array(
 	'password' => '123',
 	'database' => 'test_db'
 ));
-
+```
 #### 2.) Wczytać plik connect.php w module, w którym planujemy go użyć
+```
 include(„connect.php");
-
+```
 #### 3.)Wykonać zapytanie
-
+```
 INSERT
 
 $db->insert('users', [
