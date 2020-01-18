@@ -24,7 +24,7 @@ foreach ($ret_select as $rw) {
             <td>Supplier ID</td><td><input type="number" name="SupplierID" min="0" value="<?php echo $rw['SupplierID']; ?>"></td></tr>
             <td>Category ID</td><td><input type="number" name="CategoryID" min="0" value="<?php echo $rw['CategoryID']; ?>"></td></tr>
             <td>Quantity Per Unit</td><td><input type="text" name="QuantityPerUnit" maxlength='20' value="<?php echo $rw['QuantityPerUnit']; ?>"></td></tr>
-            <td>Unit Price</td><td><input type="number" name="UnitPrice" min="0" value="<?php echo $rw['UnitPrice']; ?>"></td></tr>
+            <td>Unit Price (0-10)</td><td><input type="number" name="UnitPrice" min="0" value="<?php echo $rw['UnitPrice']; ?>"></td></tr>
             <td>Units In Stock</td><td><input type="number" name="UnitsInStock" min="0" value="<?php echo $rw['UnitsInStock']; ?>"></td></tr>
             <td>Units On Order</td><td><input type="number" name="UnitsOnOrder" min="0" value="<?php echo $rw['UnitsOnOrder']; ?>"></td></tr>
             <td>Reorder Level</td><td><input type="number" name="ReorderLevel" min="0" value="<?php echo $rw['ReorderLevel']; ?>"></td></tr>

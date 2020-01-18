@@ -18,7 +18,7 @@ $products = $db->select("SELECT * FROM products");
         </tr>
         <tr>
             <td>CategoryID</td>
-            <td><input type='number' name='CategoryID'> </td>
+            <td><input type='number' name='CategoryID' min="1"> </td>
         </tr>
         <tr>
             <td>Quantity Per Unit</td>
@@ -26,8 +26,8 @@ $products = $db->select("SELECT * FROM products");
             </td>
         </tr>
         <tr>
-            <td>Unit Price</td>
-            <td><input type='number' name='UnitPrice' min="0">
+            <td>Unit Price (0-10)</td>
+            <td><input type='number' name='UnitPrice' min='0'>
             </td>
         </tr>
         <tr>
