@@ -48,3 +48,5 @@ foreach ($ret_select as $rw) {
 ?>
 </div>
 </div>
+
+<?php include("footer.php"); ?>

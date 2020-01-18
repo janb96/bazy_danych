@@ -96,4 +96,6 @@ if($customerID != NULL) {
 </div>
 </div>
 
+<?php include("footer.php"); ?>
+
 

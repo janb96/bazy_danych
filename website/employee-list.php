@@ -43,3 +43,5 @@ include("header.php");
 </table>
 
 </div>
+
+<?php include("footer.php"); ?>
