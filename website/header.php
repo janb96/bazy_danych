@@ -57,6 +57,7 @@
                     <li class="active"><a href="customer-list.php">Customers</a></li>
                     <li class="active"><a href="product-list.php">Products</a></li>
                     <li class="active"><a href="order-list.php">Orders</a></li>
+                    <li class="active"><a href="stats.php">Stats1</a></li>
                 </ul>
             </div>
         </div>
