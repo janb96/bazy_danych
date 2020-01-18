@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select year(`test_db`.`orders`.`OrderDate`) AS `year(OrderDate)`,month(`test_db`.`orders`.`OrderDate`) AS `month(OrderDate)`,count(`test_db`.`orders`.`OrderID`) AS `count(OrderID)` from `test_db`.`orders` group by year(`test_db`.`orders`.`OrderDate`),month(`test_db`.`orders`.`OrderDate`)
+md5=10c837c74083d0b542f8bbf95d23a436
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=%
+suid=1
+with_check_option=0
+timestamp=2020-01-18 11:26:01
+create-version=1
+source=select year(`orders`.`OrderDate`) AS `year(OrderDate)`,month(`orders`.`OrderDate`) AS `month(OrderDate)`,count(`orders`.`OrderID`) AS `count(OrderID)` from `orders` group by year(`orders`.`OrderDate`),month(`orders`.`OrderDate`)
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_unicode_ci
+view_body_utf8=select year(`test_db`.`orders`.`OrderDate`) AS `year(OrderDate)`,month(`test_db`.`orders`.`OrderDate`) AS `month(OrderDate)`,count(`test_db`.`orders`.`OrderID`) AS `count(OrderID)` from `test_db`.`orders` group by year(`test_db`.`orders`.`OrderDate`),month(`test_db`.`orders`.`OrderDate`)
