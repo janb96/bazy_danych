@@ -58,15 +58,7 @@
                     <li class="active"><a href="customer-list.php">Customers</a></li>
                     <li class="active"><a href="product-list.php">Products</a></li>
                     <li class="active"><a href="order-list.php">Orders</a></li>
-                    <li class="active"><a href="stats.php">Stats1</a></li>
-                    <li class="active"><a href="stats2.php">Stats2</a></li>
-                    <li class="active"><a href="stats3.php">Stats3</a></li>
-                    <li class="active"><a href="stats4.php">Stats4</a></li>
-                    <li class="active"><a href="stats5.php">Stats5</a></li>
-                    <li class="active"><a href="stats6.php">Stats6</a></li>
-                    <li class="active"><a href="stats7.php">Stats7</a></li>
-                    <li class="active"><a href="stats8.php">Stats8</a></li>
-                    <li class="active"><a href="stats9.php">Stats9</a></li>
+                    <li class="active"><a href="stats-main.php">Stats</a></li>
                 </ul>
 
             </div>
