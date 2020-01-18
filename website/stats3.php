@@ -17,6 +17,8 @@ include("header.php");
 $start_time = microtime(true);
 $sql_select = "SELECT CustomerID, CompanyName, count(OrderID) FROM `customers` NATURAL JOIN `orders` NATURAL JOIN `order_details` GROUP BY OrderID ORDER BY `count(OrderID)`  DESC LIMIT 10";
 
+// End clock time in seconds
+    $end_time = microtime(true);
 $ret_select = $db->select($sql_select);
 $start_num = 0;
 
@@ -34,14 +36,13 @@ foreach ($ret_select as $rw) {
         <?php };  ?>
 
 <?php
-    // End clock time in seconds
-    $end_time = microtime(true);
+
 
     // Calculate script execution time
     $execution_time = ($end_time - $start_time);
-    $execution_time2 = $execution_time*1000;
+    $execution_time2 = $execution_time*1000000;
 
-    echo " Czas wykonywania zapytania = ".$execution_time2." milisekund";
+    echo " Czas wykonywania zapytania = ".$execution_time2." mikrosekund";
 ?>
 
 </table>

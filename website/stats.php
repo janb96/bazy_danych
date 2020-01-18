@@ -15,6 +15,9 @@ include("header.php");
 $start_time = microtime(true);
 $sql_select = "SELECT CompanyName, sum(howMany) as TotalQuantitiy FROM (SELECT CompanyName, OrderID, sum(Quantity) as howMany FROM `orders` NATURAL JOIN `customers` NATURAL JOIN `order_details` GROUP BY OrderID ORDER BY CompanyName, OrderID) AS table1 GROUP BY CompanyName ORDER BY `TotalQuantitiy`  DESC";
 
+// End clock time in seconds
+$end_time = microtime(true);
+
 $ret_select = $db->select($sql_select);
 $start_num = 0;
 
@@ -32,14 +35,14 @@ foreach ($ret_select as $rw) {
 
         <?php };  ?>
 <?php
-    // End clock time in seconds
-    $end_time = microtime(true);
+
+
 
     // Calculate script execution time
     $execution_time = ($end_time - $start_time);
-    $execution_time2 = $execution_time*1000;
+    $execution_time2 = $execution_time*1000000;
 
-    echo " Czas wykonywania zapytania = ".$execution_time2." milisekund";
+    echo " Czas wykonywania zapytania = ".$execution_time2." mikrosekund";
 ?>
 
 </table>
