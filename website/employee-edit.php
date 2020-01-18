@@ -37,7 +37,7 @@ foreach ($ret_select as $rw) {
 	<?php
 
         if($_POST != $rw){
-        	$updateResult = $db->update("Employees", $_POST, "`EmployeeID`=:employeeID", ['employeeID' => $employeeID]);
+        	$updateResult = $db->update("employees", $_POST, "`EmployeeID`=:employeeID", ['employeeID' => $employeeID]);
         	$linkToRedirect = "/employee-list.php";
         	$_SESSION['redirect'] = $linkToRedirect;
         }
