@@ -1,13 +1,71 @@
 <?php
 
-require_once('connect.php');
+  session_start();
+
+  if(isset($_SESSION['redirect'])) {
+    $url = $_SESSION['redirect'];
+    unset($_SESSION['redirect']);
+    header("Location: ".$url);
+  }
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BAZY DANYCH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
 
-//Przyklad: jak uzyc wrappera do zapytania o klientow pochodzacych z Niemiec
-$result = $db->select('SELECT * FROM customers WHERE Country=:country',
-	[
-		'country' => "Germany"
-	]
-);
+    <script src="../assets/js/html5shiv.js"></script>
 
-print_r($result);
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="employee-list.php">Employees</a></li>
+                    <li class="active"><a href="customer-list.php">Customers</a></li>
+                    <li class="active"><a href="product-list.php">Products</a></li>
+                    <li class="active"><a href="order-list.php">Orders</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<h1><p style="text-align: center">Projekt z przedmiotu Bazy Danych</p></h1></br></br>
+<h2><p style="text-align: center">Jan Boduch</p></h2></br>
+<h2><p style="text-align: center">Mariusz Rogucki</p></h2></br>
+<h2><p style="text-align: center">Sebastian Dąbek</p></h2></br>
+
+<div class="container">
