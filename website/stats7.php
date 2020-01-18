@@ -7,9 +7,9 @@ include("header.php");
 <h1>Historia zamówień</h1>
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
-        <th width="125">year(OrderDate)</th>
-        <th>month(OrderDate)</th>
-        <th>count(OrderID)</th>
+        <th width="125">Rok zamówienia</th>
+        <th>Miesiąc zamówienia</th>
+        <th>Ilość zamówień</th>
 
 <?php
 

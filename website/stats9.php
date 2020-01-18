@@ -7,8 +7,8 @@ include("header.php");
 <h1>Zamówienia rok do roku</h1>
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
-        <th width="200">year(o.OrderDate)</th>
-        <th>OrderAmount</th>
+        <th width="200">Rok</th>
+        <th>Wartość zamówienia</th>
 
 <?php
 

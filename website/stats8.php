@@ -8,7 +8,7 @@ include("header.php");
 <table cellpadding='0' cellspacing='0' border='0' class='table table-striped table-bordered' >
     <tr><th>No</th>
         <th width="125">OrderID</th>
-        <th>OrderAmount</th>
+        <th>Wartość zamówienia</th>
 
 <?php
 

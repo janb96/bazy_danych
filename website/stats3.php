@@ -9,7 +9,7 @@ include("header.php");
     <tr><th>No</th>
         <th width="125">CustomerID</th>
         <th>CompanyName</th>
-        <th>count(OrderID)</th>
+        <th>Ilość zamówień</th>
 
 <?php
 
