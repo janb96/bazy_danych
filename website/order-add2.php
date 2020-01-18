@@ -38,6 +38,11 @@ include("header.php");
                         </td>
                 </tr>
 
+                <tr> 
+                        <td>Quantity</td> 
+                        <td><input type='number' name='Quantity' maxlength='25'></td>
+                </tr>
+
                 <tr>
                         <td>EmployeeID</td>
                         <td>
@@ -61,7 +66,10 @@ include("header.php");
 
 <?php
 
-        if($_POST['CustomerID']) {
+        if($_POST['Quantity']) {
+
+                $Quantity = $_POST['Quantity'];
+                unset($_POST['Quantity']);
 
         	$databaseData = $_POST;
         	$flag = true;
@@ -77,6 +85,8 @@ include("header.php");
         	} else {
         		echo "<p>Nie wypelniles wszystkich pol</p>";
         	}
+
+                $makeProcedure = $db->query("CALL newOrderWithParam2(".$Quantity.")", NULL);
 
         }
 
