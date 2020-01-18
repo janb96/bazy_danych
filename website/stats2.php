@@ -12,6 +12,9 @@ include("header.php");
 
 <?php
 
+// Starting clock time in seconds
+$start_time = microtime(true);
+
 $sql_select = "SELECT OrderID, sum(Quantity) FROM `order_details` GROUP BY OrderID ORDER BY `sum(Quantity)`  DESC";
 
 $ret_select = $db->select($sql_select);
@@ -28,6 +31,16 @@ foreach ($ret_select as $rw) {
         </tr>
 
         <?php };  ?>
+<?php
+    // End clock time in seconds
+    $end_time = microtime(true);
+
+    // Calculate script execution time
+    $execution_time = ($end_time - $start_time);
+    $execution_time2 = $execution_time*1000;
+
+    echo " Czas wykonywania zapytania = ".$execution_time2." milisekund";
+?>
 
 </table>
 

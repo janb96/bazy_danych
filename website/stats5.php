@@ -12,6 +12,9 @@ include("header.php");
 
 <?php
 
+// Starting clock time in seconds
+$start_time = microtime(true);
+
 $sql_select = "SELECT EmployeeID, count(OrderID) as howMuch FROM `order_details` NATURAL JOIN `orders` NATURAL JOIN `employees` GROUP BY EmployeeID ORDER BY `howMuch`  DESC";
 
 $ret_select = $db->select($sql_select);
@@ -30,6 +33,16 @@ foreach ($ret_select as $rw) {
 
         <?php };  ?>
 
+<?php
+    // End clock time in seconds
+    $end_time = microtime(true);
+
+    // Calculate script execution time
+    $execution_time = ($end_time - $start_time);
+    $execution_time2 = $execution_time*1000;
+
+    echo " Czas wykonywania zapytania = ".$execution_time2." milisekund";
+?>
 </table>
 
 </div>
